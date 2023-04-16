@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "KeyTransformer",
+    "discription": "Transform the key of the song you want to sing",
+    "version": "1.0",
+    "icons": {
+        "16": "images/16.png",
+        "32": "images/32.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+    }
+}
