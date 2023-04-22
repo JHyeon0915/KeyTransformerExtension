@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "KeyTransformer",
-    "discription": "Transform the key of the song you want to sing.",
+    "description": "Transform the key of the song you want to sing.",
     "version": "1.0",
     "icons": {
         "16": "images/16.png",
@@ -10,6 +10,19 @@
         "128": "images/128.png"
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_icon": "images/32.png",
+        "default_ttile": "KeyTransformer",
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://web-accessible-resources-1.glitch.me/*"],
+          "js": ["./popup/popup.js"],
+          "css": ["./popup/popup.css"]
+        }
     ]
 }
