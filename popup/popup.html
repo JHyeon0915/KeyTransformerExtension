@@ -5,15 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./popup.css">
         <script defer src="./content.js"></script>
+        <script defer src="./slider.js"></script>
     </head>
     <body>
         <header>
             <h2>KeyTransposer</h2>
         </header>
         <main>
-            <label for="slider"></label>
-            <p id="sliderLabel">0</p>
-            <input type="range" id="slider" min="-180" max="180" value="0" step="10">
+            <input 
+                type="range" 
+                id="slider" 
+                min="-100" 
+                max="100" 
+                value="0" 
+                step="10">
+            <label for="slider" id="slider-label">
+                <p id="slider-label-value">0</p>
+            </label>
         </main>
     </body>
 </html>
